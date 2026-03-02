@@ -1,11 +1,489 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Farmacorp - Header</title>
+
+    <!-- CSS PROPIO -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
+
 <body>
-    
+
+    <!-- ================= HEADER ================= -->
+    <header>
+
+        <div class="top-bar">
+            <div class="logo">
+                <img src="https://farmacorp.com/cdn/shop/files/farmacorp_-_copia_672x180_671x180_671x180_1570e736-2830-4a88-9469-2cffd4cb908e_1_671x180.webp?v=1767262376"
+                    alt="logo">
+            </div>
+
+            <div class="ubicacion">
+                <i class="bi bi-box-seam"></i>
+                ¿Dónde quieres <i class="bi bi-chevron-down"></i><br> recibir tu pedido?
+            </div>
+
+            <div class="buscador">
+                <select>
+                    <option>Todas las categorías</option>
+                    <option>Salud</option>
+                    <option>Belleza</option>
+                    <option>Hogar</option>
+                </select>
+                <input type="text" placeholder="¿Qué estás buscando?">
+                <button><i class="bi bi-search" style="color: black;"></i></button>
+            </div>
+
+            <div class="acciones">
+                <i class="bi bi-cart3" style="font-size: 25px;"></i> <br>
+                <a href="#">Iniciar sesión</a>
+            </div>
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Lo Nuevo</a></li>
+                <li><a href="#">Supermercado</a></li>
+                <li><a href="#">Salud y Medicamentos</a></li>
+                <li><a href="#">Belleza</a></li>
+                <li><a href="#">Mamá y Bebé</a></li>
+                <li><a href="#">Cuidado Personal</a></li>
+                <li><a href="#">Hogar</a></li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- ================= CARRUSEL PRINCIPAL ================= -->
+    <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imgTarjetas/imgBaner1.png" class="d-block w-100">
+            </div>
+
+            <div class="carousel-item">
+                <img src="imgTarjetas/imgBaner2.webp" class="d-block w-100">
+            </div>
+
+            <div class="carousel-item">
+                <img src="imgTarjetas/imgBaner3.png" class="d-block w-100">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#miCarrusel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+
+    <!-- ================= SLIDER DE TARJETAS ================= -->
+    <div class="swiper mySwiper">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide card-item">
+                <i class="bi bi-file-earmark-medical"></i>
+                <h4>Cotiza tu receta</h4>
+                <p>Y recibe lo que necesitas</p>
+            </div>
+
+            <div class="swiper-slide card-item">
+                <i class="bi bi-heart-pulse"></i>
+                <h4>Farmaclub 7%</h4>
+                <p>Ahorra en medicamentos</p>
+            </div>
+
+            <div class="swiper-slide card-item card-destacada">
+                <span class="badge-nuevo">¡Nuevo!</span>
+                <i class="bi bi-emoji-wink"></i>
+                <h4>Farmaclub</h4>
+                <p>Más beneficios</p>
+            </div>
+
+            <div class="swiper-slide card-item">
+                <i class="bi bi-tags"></i>
+                <h4>Outlet On</h4>
+                <p>¡Aprovecha Ahora!</p>
+            </div>
+
+            <div class="swiper-slide card-item">
+                <span class="badge-nuevo">¡Nuevo!</span>
+                <i class="bi bi-briefcase"></i>
+                <h4>Trabaja con nosotros</h4>
+                <p>Postula a nuestras vacantes</p>
+            </div>
+
+            <!-- Servicios de Salud -->
+            <div class="swiper-slide card-item">
+                <span class="badge-nuevo">¡Nuevo!</span>
+                <i class="bi bi-heart-pulse"></i>
+                <h4>Servicios de Salud</h4>
+                <p>Bienestar que perdura</p>
+            </div>
+
+            <!-- Ventas corporativas -->
+            <div class="swiper-slide card-item">
+                <i class="bi bi-arrow-repeat"></i>
+                <h4>Ventas corporativas</h4>
+                <p>Compra para tu empresa</p>
+            </div>
+
+            <!-- Buen vivir -->
+            <div class="swiper-slide card-item">
+                <i class="bi bi-book"></i>
+                <h4>Buen vivir</h4>
+                <p>Los post más leídos</p>
+            </div>
+
+        </div>
+    </div>
+    <section class="productos">
+
+        <!-- ====== CARRUSEL 1 ====== -->
+        <h2>Carnaval De Bolivia</h2>
+
+        <div class="swiper productosSwiper1">
+            <div class="swiper-wrapper">
+
+                <!-- 9 PRODUCTOS -->
+                <!-- Puedes cambiar imagen y texto luego -->
+
+                <!-- Producto 1 -->
+                <div class="swiper-slide card-producto">
+                    
+                    <img src="imgTarjetas/tarj1.webp" alt="">
+                    <h5>LOREAL</h5>
+                    <p>Serum L'oréal Revitalift Retinol Noche X 30Ml</p>
+                    <span class="badge-desc">Ahorra 20%</span>
+                    <div class="precio-antiguo">Antes Bs325,20</div>
+                    <div class="precio-nuevo">Ahora Bs260,20</div>
+                </div>
+
+                <!-- Copia este bloque hasta tener 9 -->
+                <div class="swiper-slide card-producto">
+                    
+                    <img src="imgTarjetas/tarj2.webp" alt="">
+                    <h5>LOREAL</h5>
+                    <p>Crema L'oreal Revitalift Acido Hialuronico Noche X 50ML</p>
+                    <span class="badge-desc">Ahorra 20%</span>
+                    <div class="precio-antiguo">Antes Bs255,80</div>
+                    <div class="precio-nuevo">Ahora Bs204,70</div>
+                </div>
+
+                <div class="swiper-slide card-producto">
+                    
+                    <img src="imgTarjetas/tarj3.webp" alt="">
+                    <h5>LOREAL</h5>
+                    <p>Crema L'oreal Revitalift Acido Hialuronico-Para Dia X 50ML</p>
+                    <span class="badge-desc">Ahorra 20%</span>
+                    <div class="precio-antiguo">Antes Bs325,20</div>
+                    <div class="precio-nuevo">Ahora Bs260,20</div>
+                </div>
+
+                <div class="swiper-slide card-producto">
+                    
+                    <img src="imgTarjetas/tarj4.webp" alt="">
+                    <h5>LOREAL</h5>
+                    <p>Gel Limpiador L'oréal Ácido Hialurónico - Anti Impurezas X 150Ml</p>
+                    <span class="badge-desc">Ahorra 20%</span>
+                    <div class="precio-antiguo">Antes Bs255,80</div>
+                    <div class="precio-nuevo">Ahora Bs204,70</div>
+                </div>
+
+                <div class="swiper-slide card-producto">
+                    
+                    <img src="imgTarjetas/tarj5.webp" alt="">
+                    <h5>LOREAL</h5>
+                    <p>Aceite Elvive Tratamiento Capilar Extraordinario X 100Ml</p>
+                    <span class="badge-desc">Ahorra 15%</span>
+                    <div class="precio-antiguo">Antes Bs137,70</div>
+                    <div class="precio-nuevo">Ahora Bs107,00</div>
+                </div>
+
+                <div class="swiper-slide card-producto">
+                    
+                    <img src="imgTarjetas/tarj6.webp">
+                    <h5>LOREAL</h5>
+                    <p>Garnier Skin Active Agua Micelar X 100Ml</p>
+                    <span class="badge-desc">Ahorra 15%</span>
+                    <div class="precio-antiguo">Antes Bs149,70</div>
+                    <div class="precio-nuevo">Ahora Bs127,30</div>
+                </div>
+
+                <div class="swiper-slide card-producto">
+                    
+                    <img src="imgTarjetas/tarj7.webp" alt="">
+                    <h5>LOREAL</h5>
+                    <p>Garnier Skin Active Agua Micelar Con Aceite X 100Ml</p>
+                    <span class="badge-desc">Ahorra 15%</span>
+                    <div class="precio-antiguo">Antes Bs369,50</div>
+                    <div class="precio-nuevo">Ahora Bs59,10</div>
+                </div>
+
+                <div class="swiper-slide card-producto">
+                 
+                    <img src="imgTarjetas/tarj8.webp" alt="">
+                    <h5>LOREAL</h5>
+                    <p>Agua Micelar Garnier Tono Uniforme X 400Ml</p>
+                    <span class="badge-desc">Ahorra 15%</span>
+                    <div class="precio-antiguo">Antes Bs89,50</div>
+                    <div class="precio-nuevo">Ahora Bs76,10</div>
+                </div>
+
+                <!-- TARJETA VER MÁS -->
+                <div class="swiper-slide card-producto card-vermas">
+                    <div class="vermas-content">
+                        
+                        <i class="bi bi-arrow-right-circle-fill"></i>
+                        <h4>Ver más</h4>
+                        <span class="linea-titulo">Carnaval De Bolivia</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- ====== CARRUSEL 2 ====== -->
+        <h2>Veranol</h2>
+
+        <div class="swiper productosSwiper2">
+            <div class="swiper-wrapper">
+
+                <!-- Repite misma estructura -->
+                <div class="swiper-slide card-producto">
+                   
+                    <img src="imgTarjetas/tarj9.webp" alt="">
+                    <h5>LOREAL</h5>
+                    <p>Serum L'oréal Revitalift Retinol Noche X 30Ml</p>
+                    <span class="badge-desc">Ahorra 27%</span>
+                    <div class="precio-antiguo">Antes Bs55,00</div>
+                    <div class="precio-nuevo">Ahora Bs40,00</div>
+                </div>
+
+                <div class="swiper-slide card-producto">
+                    
+                    <img src="imgTarjetas/tarj10.webp" alt="">
+                    <h5>LOREAL</h5>
+                    <p>Serum L'oréal Revitalift Retinol Noche X 30Ml</p>
+                    <span class="badge-desc">Ahorra 10%</span>
+                    <div class="precio-antiguo">Antes Bs5,10</div>
+                    <div class="precio-nuevo">Ahora Bs4,59</div>
+                </div>
+
+                <div class="swiper-slide card-producto">
+                   
+                    <img src="imgTarjetas/tarj11.webp" alt="">
+                    <h5>LOREAL</h5>
+                    <p>Serum L'oréal Revitalift Retinol Noche X 30Ml</p>
+                    <span class="badge-desc">Ahorra 10%</span>
+                    <div class="precio-antiguo">Antes Bs3,30</div>
+                    <div class="precio-nuevo">Ahora Bs2,97</div>
+                </div>
+
+                <div class="swiper-slide card-producto">
+                    
+                    <img src="imgTarjetas/tarj12.webp" alt="">
+                    <h5>LOREAL</h5>
+                    <p>Serum L'oréal Revitalift Retinol Noche X 30Ml</p>
+                    <span class="badge-desc">Ahorra 10%</span>
+                    <div class="precio-antiguo">Antes Bs3,30</div>
+                    <div class="precio-nuevo">Ahora Bs2,97</div>
+                </div>
+
+                <div class="swiper-slide card-producto">
+               
+                    <img src="imgTarjetas/tarj13.webp" alt="">
+                    <h5>LOREAL</h5>
+                    <p>Serum L'oréal Revitalift Retinol Noche X 30Ml</p>
+                    <span class="badge-desc">Ahorra 10%</span>
+                    <div class="precio-antiguo">Antes Bs7,00</div>
+                    <div class="precio-nuevo">Ahora Bs6,30</div>
+                </div>
+
+                <div class="swiper-slide card-producto">
+                
+                    <img src="imgTarjetas/tarj14.webp" alt="">
+                    <h5>LOREAL</h5>
+                    <p>Serum L'oréal Revitalift Retinol Noche X 30Ml</p>
+                    <span class="badge-desc">Ahorra 10%</span>
+                    <div class="precio-antiguo">Antes Bs116,70</div>
+                    <div class="precio-nuevo">Ahora Bs105,03</div>
+                </div>
+
+                <div class="swiper-slide card-producto">
+         
+                    <img src="imgTarjetas/tarj15.webp" alt="">
+                    <h5>LOREAL</h5>
+                    <p>Serum L'oréal Revitalift Retinol Noche X 30Ml</p>
+                    <span class="badge-desc">Ahorra 50%</span>
+                    <div class="precio-antiguo">Antes Bs15,60</div>
+                    <div class="precio-nuevo">Ahora Bs7,80</div>
+                </div>
+
+                <div class="swiper-slide card-producto">
+
+                    <img src="imgTarjetas/tarj16.webp" alt="">
+                    <h5>LOREAL</h5>
+                    <p>Serum L'oréal Revitalift Retinol Noche X 30Ml</p>
+                    <span class="badge-desc">Ahorra 50%</span>
+                    <div class="precio-antiguo">Antes Bs453,40</div>
+                    <div class="precio-nuevo">Ahora Bs226,70</div>
+                </div>
+
+                <!-- Copiar hasta 9 -->
+
+                <div class="swiper-slide card-producto card-vermas">
+                    <div class="vermas-content">
+                        
+                        <i class="bi bi-arrow-right-circle-fill"></i>
+                        <h4>Ver más</h4>
+                        <span class="linea-titulo">Veranol</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer-farma pt-5 pb-4">
+        <div class="container">
+
+            <div class="row">
+
+                <!-- Síguenos -->
+                <div class="col-md-3">
+                    <h6 class="footer-title">Síguenos</h6>
+                    <div class="footer-social mt-3">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <!-- ¿Necesitas ayuda? -->
+                <div class="col-md-4">
+                    <h6 class="footer-title">¿Necesitas ayuda?</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Atención al cliente</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Catálogo de Canje Farmaclub</a></li>
+                        <li><a href="#">Reglamento del Programa Farmaclub</a></li>
+                        <li><a href="#">Resolución AJ "A Poner La Mesa"</a></li>
+                        <li><a href="#">Resolución AJ "Ruleta Farmaclub"</a></li>
+                        <li><a href="#">Resolución AJ "Ruleta Ganadora Dr. Osvaldo 2.0"</a></li>
+                        <li><a href="#">Consulta tu factura electronica</a></li>
+                        <li><a href="#">Pago de servicios Cochabamba</a></li>
+                    </ul>
+                </div>
+
+                <!-- Servicios -->
+                <div class="col-md-3">
+                    <h6 class="footer-title">Servicios</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Servicios de salud</a></li>
+                        <li><a href="#">Farmamovil</a></li>
+                        <li><a href="#">Sucursales</a></li>
+                        <li><a href="#">Ventas Corporativas</a></li>
+                    </ul>
+                </div>
+
+                <!-- Somos Farmacorp -->
+                <div class="col-md-2">
+                    <h6 class="footer-title">Somos Farmacorp</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Trabaja con nosotros</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Línea inferior -->
+            <div class="footer-bottom mt-4 pt-3">
+                <p class="m-0">
+                    Copyright © 2026 Farmacorp |
+                    <a href="#">Política de privacidad</a> |
+                    <a href="#">Política de envío</a> |
+                    <a href="#">Política de reembolso</a> |
+                    <a href="#">Términos del servicio</a>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- ================= SCRIPTS AL FINAL ================= -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS (PRIMERO se carga la librería) -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Luego se inicializa -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 5,   // 👈 ahora 5 visibles
+            spaceBetween: 20,
+            grabCursor: true,
+            breakpoints: {
+                0: { slidesPerView: 1.2 },
+                600: { slidesPerView: 2 },
+                900: { slidesPerView: 3 },
+                1200: { slidesPerView: 5 } // 👈 5 en escritorio
+            }
+        });
+    </script>
+
+    <script>
+        new Swiper(".productosSwiper1", {
+            slidesPerView: 5,
+            spaceBetween: 20,
+            grabCursor: true,
+            breakpoints: {
+                0: { slidesPerView: 1.2 },
+                600: { slidesPerView: 2 },
+                900: { slidesPerView: 3 },
+                1200: { slidesPerView: 5 }
+            }
+        });
+
+        new Swiper(".productosSwiper2", {
+            slidesPerView: 5,
+            spaceBetween: 20,
+            grabCursor: true,
+            breakpoints: {
+                0: { slidesPerView: 1.2 },
+                600: { slidesPerView: 2 },
+                900: { slidesPerView: 3 },
+                1200: { slidesPerView: 5 }
+            }
+        });
+    </script>
+
+
 </body>
+
 </html>

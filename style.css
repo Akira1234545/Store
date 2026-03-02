@@ -1,0 +1,409 @@
+/* =========================
+   RESET GENERAL
+========================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#ffffff;
+}
+
+/* =========================
+   HEADER
+========================= */
+header{
+    background:#2462b4;
+    color:white;
+}
+
+/* =========================
+   BARRA SUPERIOR
+========================= */
+.top-bar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:30px 40px;
+    gap:20px;
+}
+
+.logo img{
+    width:180px;
+}
+
+.ubicacion{
+    background:#13519d;
+    padding:8px 15px;
+    border-radius:20px;
+    font-size:14px;
+    cursor:pointer;
+}
+
+.ubicacion:hover{
+    background:#163d6e;
+}
+
+/* =========================
+   BUSCADOR
+========================= */
+.buscador{
+    display:flex;
+    flex:1;
+    max-width:900px;
+}
+
+.buscador select,
+.buscador button{
+    padding:10px;
+    border:none;
+    background:#d6d9dd;
+}
+
+.buscador select{
+    border-radius:5px 0 0 5px;
+}
+
+.buscador input{
+    flex:1;
+    padding:11px;
+    border:none;
+    outline:none;
+}
+
+.buscador button{
+    border-radius:0 5px 5px 0;
+    cursor:pointer;
+}
+
+.buscador button:hover{
+    background:#163d6e;
+}
+
+/* =========================
+   MENU
+========================= */
+.menu ul{
+    display:flex;
+    list-style:none;
+}
+
+.menu a{
+    display:block;
+    padding:15px 18px;
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    background:#1b3c6a;
+}
+
+/* =========================
+   CARRUSEL PRINCIPAL
+========================= */
+.carousel-item{
+    height:400px;
+}
+
+.carousel-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.acciones a{
+color: #d6d9dd;
+text-decoration: none;
+}
+/* =========================
+   CARRUSEL SUPERIOR (ICONOS)
+========================= */
+.mySwiper{
+    margin-top:50px;
+    padding:20px 40px;
+}
+
+.card-item{
+    background:#e9edf2;
+    border-radius:18px;
+    padding:25px 15px;
+    text-align:center;
+    height:190px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    box-shadow:0 8px 18px rgba(0,0,0,0.08);
+    transition:0.3s;
+    position:relative;
+}
+
+/* TARJETA DESTACADA FARMACLUB */
+
+.card-item.card-destacada h4,
+.card-item.card-destacada p,
+.card-item.card-destacada i {
+    color: #d40000 !important;
+}
+.card-destacada{
+    background:#f3e9ea;   /* rosado claro */
+}
+
+.card-destacada h4{
+    color:#c62828;   /* rojo título */
+}
+
+.card-destacada p{
+    color:#c62828;
+}
+
+.card-destacada i{
+    color:#c62828;
+}
+
+.card-item:hover{
+    transform:translateY(-6px);
+}
+
+.card-item i{
+    font-size:38px;
+    color:#0d6efd;
+    margin-bottom:10px;
+}
+
+.card-item h4{
+    color:#0d6efd;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+.card-item p{
+    color:#0d6efd;
+    font-size:14px;
+}
+
+.badge-nuevo{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:red;
+    color:white;
+    font-size:12px;
+    padding:6px 12px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+/* =========================
+   PRODUCTOS (CARRUSEL)
+========================= */
+.productos{
+    padding:60px;
+    background:#f5f5f5;
+}
+
+.productos h2{
+    margin:40px 0 25px;
+    color:#1b5fa7;
+    font-weight:bold;
+    text-align:center;   /* 👈 centrado */
+    font-size:26px;
+}
+
+/* TARJETAS PRODUCTO */
+.card-producto{
+    background:white;
+    border-radius:12px;
+    padding:15px;
+    height:360px;
+    box-shadow:0 5px 12px rgba(0,0,0,0.08);
+    position:relative;
+    transition:0.3s;
+    display:flex;
+    flex-direction:column;
+}
+
+.card-producto:hover{
+    transform:translateY(-5px);
+}
+
+.card-producto img{
+    width:100%;
+    height:150px;
+    object-fit:contain;
+    margin-bottom:10px;
+}
+
+.card-producto h5{
+    font-size:13px;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+.card-producto p{
+    font-size:14px;
+    flex-grow:1;
+}
+
+/* BADGES */
+.badge-online{
+    position:absolute;
+    top:10px;
+    left:10px;
+    background:#c00000;
+    color:white;
+    padding:4px 8px;
+    font-size:11px;
+    border-radius:4px;
+}
+
+.badge-desc{
+    display:inline-block;
+    background:red;
+    color:white;
+    font-size:12px;
+    padding:4px 8px;
+    margin:6px 0;
+}
+
+.precio-antiguo{
+    text-decoration:line-through;
+    color:gray;
+    font-size:14px;
+}
+
+.precio-nuevo{
+    color:red;
+    font-size:20px;
+    font-weight:bold;
+}
+
+
+/* ===============================
+   TARJETA VER MÁS ESTILO FARMACORP
+================================ */
+
+.card-vermas{
+    background:#0f3d73; /* azul oscuro */
+    border-radius:12px;
+    height:360px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.card-vermas:hover{
+    transform:translateY(-5px);
+    background:#0c2f59;
+}
+
+.card-vermas .vermas-content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.card-vermas .linea-titulo{
+    font-size:15px;
+    font-weight:500;
+    color:white;
+    margin-bottom:10px;
+}
+
+.card-vermas h4{
+    font-size:22px;
+    font-weight:bold;
+    color:white;
+    margin-bottom:12px;
+}
+
+.card-vermas i{
+    font-size:40px;
+    color:white;
+}
+
+/* FOOTER */
+.footer-farma {
+  background-color: #f4f4f4;
+  color: #555;
+  font-size: 14px;
+}
+
+.footer-title {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #555;
+  transition: 0.2s;
+}
+
+.footer-links a:hover {
+  color: #0d47a1;
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  margin-right: 8px;
+  color: #555;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  background-color: #d0d0d0;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  font-size: 13px;
+  color: #777;
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  color: #777;
+  margin: 0 5px;
+}
+
+.footer-bottom a:hover {
+  color: #000;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media(max-width:900px){
+    .top-bar{
+        flex-wrap:wrap;
+    }
+
+    .buscador{
+        width:100%;
+    }
+}
