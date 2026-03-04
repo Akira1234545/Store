@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bienvenido - Sistema de Autenticación</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome para el icono de éxito y logout -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(-45deg, #4481eb, #04befe);
+      font-family: "Poppins", sans-serif;
+    }
+
+    .card {
+      background: white;
+      padding: 50px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      width: 90%;
+      max-width: 450px;
+      animation: slideUp 0.5s ease-out;
+    }
+
+    .icon-success {
+      font-size: 80px;
+      color: #28a745;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #4481eb;
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+
+    .btn-logout {
+      padding: 12px 30px;
+      border: none;
+      border-radius: 50px;
+      background-color: #4481eb;
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-logout:hover {
+      background-color: #333;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <!-- Icono de éxito solicitado por la práctica -->
+    <i class="fas fa-check-circle icon-success"></i>
+
+    <h1>✓ Bienvenido</h1>
+    <!-- Aquí se inyectará el nombre del usuario -->
+    <h2 id="userName">Cargando usuario...</h2>
+
+    <button class="btn-logout" onclick="logout()">
+      <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
+    </button>
+  </div>
+
+  <script>
+    // 1. Capturar los parámetros de la URL (Query String)
+    const urlParams = new URLSearchParams(window.location.search);
+    const user = urlParams.get('user');
+
+    // 2. Validación: Si no hay parámetro 'user', significa que entró directo sin loguearse
+    if (!user) {
+      alert("Acceso denegado. Por favor inicia sesión.");
+      window.location.href = "index.html";
+    } else {
+      // 3. Mostrar el mensaje personalizado
+      document.getElementById("userName").textContent = "Has iniciado sesión como: " + user;
+    }
+
+    // 4. Función para "Cerrar Sesión" (Redirige al inicio)
+    function logout() {
+      // Como no usamos LocalStorage, solo redirigimos al login
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>
